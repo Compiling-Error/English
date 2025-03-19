@@ -86,6 +86,39 @@
             color: white;
         }
 
+        .reveal-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        #reveal-text {
+            font-size: 2em;
+            font-weight: bold;
+            display: none;
+            color: green;
+        }
+
+         button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+        
+    <script>
+        function revealTruth() {
+            document.getElementById("reveal-text").style.display = "block";
+        }
+    </script>
+
         /* Ensure the layout is responsive */
         @media (max-width: 768px) {
             main {
